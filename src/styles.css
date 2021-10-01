@@ -1,0 +1,118 @@
+body {
+  background-color: hsl(214, 47%, 23%);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position-x: 45%;
+  background-position-y: 65%;
+  background-size: 80% 35%;
+}
+
+.Header {
+  width: 80%;
+
+  /* text-align: center; */
+  margin: auto;
+  margin-top: 15%;
+  border: 4px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 65% auto;
+  /* padding: 5%; */
+}
+
+.title {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  line-height: 15px;
+  margin: 12%;
+}
+
+.score-card {
+  background-color: white;
+  border-radius: 5px;
+  color: hsl(229, 64%, 46%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin: 8%;
+  font-size: 25px;
+}
+
+.score-card > span {
+  font-size: 10px;
+}
+
+/* hsl(230, 89%, 62%) to hsl(230, 89%, 65%) */
+.Counter {
+  display: grid;
+  margin-top: 15%;
+  grid-template-columns: 50% auto;
+  grid-row-gap: 12%;
+}
+
+.paper {
+  text-align: center;
+  margin: auto;
+  width: 48%;
+  height: 98%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: hsl(230, 89%, 62%) 2px 7px;
+  border: 10px solid hsl(230, 89%, 65%);
+}
+
+/* hsl(39, 89%, 49%) to hsl(40, 84%, 53%) */
+.scissors {
+  text-align: center;
+  margin: auto;
+  width: 48%;
+  height: 98%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: hsl(39, 89%, 49%) 2px 7px;
+  border: 10px solid hsl(40, 84%, 53%);
+}
+/* hsl(349, 71%, 52%) to hsl(349, 70%, 56%) */
+.rock {
+  grid-column: 1/ 3;
+  text-align: center;
+  margin: auto;
+  width: 25%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: hsl(349, 71%, 52%) 2px 7px;
+  border: 10px solid hsl(349, 70%, 56%);
+}
+
+svg {
+  margin: 25% 0 0 0;
+}
+
+.rules {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin: 20% auto 0 auto;
+  width: 15%;
+  padding: 2%;
+  border-radius: 10%;
+  color: white;
+  border: 1px solid white;
+}
+
+.third {
+  height: 400%;
+  margin: 20% 0 20% 0;
+}
+
+.third > .Hand {
+  width: 25%;
+  height: 200%;
+  margin: auto;
+}
