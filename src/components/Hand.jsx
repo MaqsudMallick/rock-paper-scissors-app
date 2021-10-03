@@ -34,19 +34,26 @@ function Hand(props) {
 
   const forRock = {
     gridRow: "1/1",
-    width: "40%",
-    marginLeft: "20px"
+    gridColumn: "1/1"
   };
   const noRock = {
-    gridRow: "1/1"
+    gridRow: "1/1",
+    gridColumn: "3/3"
   };
   function adjust() {
-    return props.choice === "rock" ? forRock : noRock;
+    return forRock;
+  }
+  function comAdjust() {
+    return noRock;
   }
   return (
     <div
       style={
-        props.isPicked === "true" ? adjust() : { backgroundColor: "white" }
+        props.isPicked === 1
+          ? adjust()
+          : props.isPicked === 2
+          ? comAdjust()
+          : { backgroundColor: "white" }
       }
       onClick={props.user}
       className={props.choice}
