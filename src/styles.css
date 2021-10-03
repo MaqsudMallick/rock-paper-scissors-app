@@ -58,6 +58,7 @@ body {
 
 .paper {
   text-align: center;
+  cursor: pointer;
   margin: auto;
   width: 48%;
   height: 98%;
@@ -71,6 +72,7 @@ body {
 .scissors {
   text-align: center;
   margin: auto;
+  cursor: pointer;
   width: 48%;
   height: 98%;
   border-radius: 100%;
@@ -85,6 +87,7 @@ body {
   margin: auto;
   width: 25%;
   height: 100%;
+  cursor: pointer;
   border-radius: 100%;
   background-color: white;
   box-shadow: hsl(349, 71%, 52%) 2px 7px;
@@ -93,6 +96,7 @@ body {
 
 svg {
   margin: 25% 0 0 0;
+  pointer-events: none;
 }
 
 .rules {
@@ -133,4 +137,5 @@ svg {
 
 .cross {
   text-align: right;
+  color: gray;
 }

@@ -31,7 +31,29 @@ function Hand(props) {
         </svg>
       );
   }
-  return <div className={props.choice}>{choose()}</div>;
+
+  const forRock = {
+    gridRow: "1/1",
+    width: "40%",
+    marginLeft: "20px"
+  };
+  const noRock = {
+    gridRow: "1/1"
+  };
+  function adjust() {
+    return props.choice === "rock" ? forRock : noRock;
+  }
+  return (
+    <div
+      style={
+        props.isPicked === "true" ? adjust() : { backgroundColor: "white" }
+      }
+      onClick={props.user}
+      className={props.choice}
+    >
+      {choose()}
+    </div>
+  );
 }
 
 export default Hand;

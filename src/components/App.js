@@ -8,18 +8,25 @@ import Chart from "./Chart.jsx";
 
 export default function App() {
   const [rulepage, pagevalue] = useState(0);
+  const [youPicked, updatePicked] = useState("none");
+  function picked(event) {
+    updatePicked(event.target.className);
+  }
+  function backgroundTriangle() {
+    return { backgroundImage: `url(${mySvG}` };
+  }
   function rulesRender() {
     let val = rulepage ? 0 : 1;
     pagevalue(val);
   }
   return (
-    <div className="App" style={{ backgroundImage: `url(${mySvG})` }}>
+    <div
+      className="App"
+      style={youPicked === "none" ? backgroundTriangle() : { color: "black" }}
+    >
       <Header />
       <Chart visibility={rulesRender} show={rulepage} />
-      <Counter />
-      {/* <div className= "third">
-      <Hand  />
-      </div> */}
+      <Counter youPicked={youPicked} picked={picked} />
       <Rules visibility={rulesRender} />
     </div>
   );
