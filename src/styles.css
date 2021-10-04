@@ -12,7 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: 45%;
   background-position-y: 65%;
-  background-size: 80% 35%;
+  background-size: 370px 180px;
 }
 
 .Header {
@@ -188,4 +188,59 @@ svg {
   border-style: none;
   font-size: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .Header {
+    width: 50%;
+  }
+  .title {
+    font-size: 300%;
+    line-height: 100%;
+  }
+  .score-card {
+    font-size: 600%;
+    line-height: 70%;
+  }
+  .score-card > span {
+    font-size: 20%;
+    letter-spacing: 5px;
+  }
+  .Counter {
+    width: 425px;
+    margin: 20% auto;
+    margin-bottom: 0;
+  }
+
+  .App {
+    background-size: 300px 200px;
+    background-position-x: 50%;
+    background-position-y: 65%;
+  }
+  .chart {
+    top: 40%;
+    left: 35%;
+    height: 400px;
+    width: 400px;
+    font-size: 20px;
+  }
+  .rules-image {
+    height: 250px;
+    width: 250px;
+  }
+  .rules {
+    margin-right: 100px;
+    margin-top: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  .refresh-button {
+    font-size: 30px;
+  }
+  .user-choice-message,
+  .house-message {
+    margin-top: 0;
+    font-size: 20px;
+  }
 }
