@@ -190,7 +190,7 @@ svg {
   cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .Header {
     width: 50%;
   }
