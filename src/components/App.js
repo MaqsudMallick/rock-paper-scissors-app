@@ -48,6 +48,10 @@ export default function App() {
     let val = rulepage ? 0 : 1;
     pagevalue(val);
   }
+  function refresh() {
+    updatePicked("none");
+    updateCom("none");
+  }
   return (
     <div
       className="App"
@@ -56,7 +60,7 @@ export default function App() {
       <Header score={score} />
       <Chart visibility={rulesRender} show={rulepage} />
       <Counter youPicked={youPicked} comPicked={comPicked} picked={picked} />
-      {youPicked !== "none" && <Message result={result} />}
+      {youPicked !== "none" && <Message result={result} refresh={refresh} />}
       <Rules visibility={rulesRender} />
     </div>
   );
