@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles.css";
-function Header() {
+function Header(props) {
   return (
     <div className="Header">
       <div className="title">
@@ -13,7 +13,7 @@ function Header() {
       <div className="score-card">
         <span>SCORE</span>
         <br />
-        12
+        {props.score}
       </div>
     </div>
   );

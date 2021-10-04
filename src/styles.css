@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(214, 47%, 23%);
+  background-color: hsl(237, 49%, 15%);
 }
 
 .App {
@@ -26,7 +26,7 @@ body {
 
 .title {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
   color: white;
   font-size: 20px;
@@ -141,4 +141,46 @@ svg {
 .cross {
   text-align: right;
   color: gray;
+}
+
+.message {
+  margin: 10% 0;
+}
+
+.user-choice-message,
+.house-message {
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+
+.user-choice-message {
+  margin: 5% 17% 0 8%;
+}
+.house-message {
+  margin: 5% 0 0 20%;
+}
+
+.result-message {
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+.refresh-button {
+  background-color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  color: hsl(214, 47%, 23%);
+  padding: 3% 15%;
+  border-style: none;
+  font-size: 10px;
 }
